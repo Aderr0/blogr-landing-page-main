@@ -7,7 +7,7 @@ body {
 .accueil-container {
     background: url("./images/bg-pattern-intro.svg") no-repeat top -1360px left -435px,
         linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-    border-radius: 0 0 0 50px;
+    border-radius: 0 0 0 70px;
     padding-bottom: 5rem;
 }
 .accueil {
@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding-bottom: 50px;
-    border-radius: 0 0 0 50px;
+    border-radius: 0 0 0 70px;
     position: relative;
     overflow: hidden;
 }
@@ -132,12 +132,16 @@ header .connexion .signup:hover, .accueil .button .start:hover {
 .designed-future {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 50px 50px 250px 50px;
+    height: 750px;
+    padding: 0px 50px 50px 50px;
     background: url('./images/illustration-editor-desktop.svg') no-repeat top 20px right -210px;
     background-size: 50%;
     font-family: 'Overpass', serif;
+    position: relative;
+}
+.designed-future h2 {
+    padding: 50px;
 }
 
 .designed-future .content {
@@ -146,8 +150,7 @@ header .connexion .signup:hover, .accueil .button .start:hover {
 }
 .designed-future .content .paragraph {
     width: 35%;
-    padding-left: 15rem;
-    padding-top: 50px;
+    padding-left: 10rem;
 }
 .designed-future h2, .designed-future .info h4 {
     color: hsl(208, 49%, 24%);
@@ -157,3 +160,89 @@ header .connexion .signup:hover, .accueil .button .start:hover {
 }
 
 
+
+
+.state-art-infrastructure {
+    display: flex;
+    align-items: center;
+    background: url("./images/bg-pattern-circles.svg") no-repeat top -550px left -400px,
+        linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    height: 350px;
+    margin-bottom: 150px;
+    border-radius: 0 70px 0 70px;
+}
+.state-art-infrastructure h2, .state-art-infrastructure p {
+    color: white;
+}
+.state-art-infrastructure .img, .state-art-infrastructure .info {
+    width: 40%;
+}
+.state-art-infrastructure .img img {
+    transform: translateX(70px);
+    width: 100%;
+    height: auto;
+}
+.state-art-infrastructure .info {
+    margin-left: 10%;
+}
+
+
+
+
+.laptop {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Overpass', serif;
+    background: url("./images/illustration-laptop-desktop.svg") no-repeat top 0px left -350px;
+    height: 800px;
+}
+.laptop .info {
+    padding-top: 250px;
+    width: 35%;
+    transform: translateX(700px);
+}
+.laptop .info h4 {
+    color: hsl(208, 49%, 24%);
+}
+.laptop .info p {
+    color: hsl(240, 2%, 79%);
+}
+
+
+
+footer {
+    background-color: hsl(240, 10%, 16%);
+    border-radius: 0 70px 0 0;
+}
+
+footer .flex {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer .title {
+    font-weight: bold;
+}
+footer .plan {
+    width: 50%;
+}
+footer .plan .all {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: left;
+}
+footer li {
+    margin: 20px 0 20px 0;
+}
+footer .logo {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
