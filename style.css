@@ -1,0 +1,159 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', serif;
+    font-size: 16px;
+}
+.accueil-container {
+    background: url("./images/bg-pattern-intro.svg") no-repeat top -1360px left -435px,
+        linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    border-radius: 0 0 0 50px;
+    padding-bottom: 5rem;
+}
+.accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    border-radius: 0 0 0 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+header .img, header .header, header .connexion {
+    width: 33%;
+}
+
+        /* HEADER */
+header .img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* MENU DEROULANT */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+.header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.header a {
+    display: block;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
+}
+.sous {
+    display: none;
+    box-shadow: 1px 1px 10px black;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+.sous a {
+    color: black;
+}
+.header li:hover .sous {
+    display: block;
+}
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+}
+.deroulant > a::after {
+    content: url("./images/icon-arrow-light.svg");
+}
+
+
+header .connexion {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+header .connexion a, .accueil .button a {
+    padding: 10px 20px 10px 20px;
+    margin: 0 15px 0 15px;
+    text-decoration: none;
+}
+header .connexion .login, .accueil .button .learn {
+    color: white;
+}
+header .connexion .signup, .accueil .button .start, .accueil .button .learn:hover {
+    background-color: white;
+    color: hsl(353, 100%, 62%);
+    border-radius: 50px;
+}
+header .connexion .signup:hover, .accueil .button .start:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+        /* TITLE */
+.title, .punshline {
+    color: white;
+}
+.title {
+    margin-bottom: 0;
+}
+.accueil .punshline {
+    margin-bottom: 50px;
+}
+
+
+
+
+
+.designed-future {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 250px 50px;
+    background: url('./images/illustration-editor-desktop.svg') no-repeat top 20px right -210px;
+    background-size: 50%;
+    font-family: 'Overpass', serif;
+}
+
+.designed-future .content {
+    display: flex;
+    width: 100%;
+}
+.designed-future .content .paragraph {
+    width: 35%;
+    padding-left: 15rem;
+    padding-top: 50px;
+}
+.designed-future h2, .designed-future .info h4 {
+    color: hsl(208, 49%, 24%);
+}
+.designed-future .info p {
+    color: hsl(240, 2%, 79%);
+}
+
+
